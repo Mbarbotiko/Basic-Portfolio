@@ -260,7 +260,7 @@ input[type=submit]:hover {
 spaced closer into the middle of the page.*/
 
  .social img:hover{
-    opacity: .5;
+    opacity: .8;
         
  }
  /* changes the opacity of the icons when they're hovered over*/
