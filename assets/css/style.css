@@ -119,12 +119,14 @@ li :hover:not(.active) {
 
 footer{
     background:rgb(66, 66, 66);
-    height: 50px;
+    height: 40px;
     text-align: center;
     width:100%;
     position:fixed;
     left:0px;
     bottom:0px;
+    padding-top: 10px;
+    
 }
 
 
@@ -187,7 +189,6 @@ p{
 
 
 
-/* Need to figure out how to style the text boxes*/
 
 input[type=submit] {
     background-color:rgb(51, 50, 50);
@@ -231,7 +232,6 @@ input[type=submit]:hover {
     margin-top:50px;
 }
 
-     /* the code below, not sure whats wrong items in flex box dont align properly when page loads 50% of the time, weird, turns out its the browser.  FIrefox= all okay, chrome= weird alignment issue.*/
 
 
 
@@ -278,6 +278,9 @@ div.descrip{
     background-color:black;
     font-size: 8pt;
     text-align: center;
+    margin-top:-8px;
+
+    /* having a hard time getting the background color of the description to take up the whole box, there is some green backgroud showing , using the height/ width isnt working to stretch it out: used negative margin to move them up  */
   
 }
 
@@ -295,10 +298,8 @@ div.gallery:hover {
 
 div.gallery img {
     width: 100%;
-    height: auto;
-    position: relative;
-    left:auto;
-    
+    height: 100%;
     
 }
+/*images are being told to take up 100% of the container, which is 180px */
 
