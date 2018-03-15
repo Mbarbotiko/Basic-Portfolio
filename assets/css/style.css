@@ -1,0 +1,304 @@
+
+
+body{
+    background-image: url("../images/concrete-texture.png");
+    color: beige;
+    font-family:Mina, sans-serif;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:200px;
+    margin-top:200px;
+    width: 960px;
+    position:relative;
+    
+
+
+}
+
+
+#bgcolor{
+    background-color:rgb(177, 202, 168);
+    padding-bottom: 200px;
+}
+
+#bgcolorport{
+    background-color:rgb(177, 202, 168);
+    padding-bottom: 500px;
+}
+
+#myname{
+    font-size: 32pt;
+    text-shadow: 5px 5px 10px rgb(43, 42, 42);
+    position:relative;
+    left:300px;
+    top:center;
+    width:400px;
+
+}
+
+#headerabout, #contact, #portfolio {
+    border-bottom:2px dotted white;
+    text-shadow: grey 2px 2px 2px;
+    padding:15px;
+}
+nav{
+    height:125px;
+    margin:auto;
+    background-color:rgb(66, 66, 66);
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:1;
+    
+}
+
+
+li {
+    padding:15px;
+    float:right;
+    position:relative;
+    top:-75px;
+    right:300px;
+}
+
+li :hover:not(.active) {
+    color:black;
+}
+
+.active {
+    color:black;
+}
+
+
+
+.aboutcontainer div{
+    border:1px dotted rgb(75, 72, 72);
+    background-color:beige;
+    margin-top: 50px;
+    flex-wrap:wrap;
+    color:rgb(58, 57, 57);
+}
+
+.aboutcontainer{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+
+.boxone{
+    width:50%;
+    order:1;
+    margin-right:25px;
+    text-align: center;
+    padding:15px;
+    margin-left:25px;
+}
+   
+
+
+.boxtwo{
+    width:50%;
+    order:2;
+    margin-left:25px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:15px;
+    margin-right:25px;
+}
+    
+.boxtwo h3{
+    text-shadow: gray 2px 2px 2px;
+}
+.boxone h3{
+    text-shadow: gray 2px 2px 2px;
+}
+
+
+
+footer{
+    background:rgb(66, 66, 66);
+    height: 50px;
+    text-align: center;
+    width:100%;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black; 
+    border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background:grey; 
+    border-radius: 50px;
+}
+
+
+
+#me{
+    height:25%;
+    width:25%;
+    z-index:1;
+    border:1px dotted rgb(63, 63, 63);
+    box-shadow:5px 5px 5px rgb(12, 12, 12);
+    float: left;
+    margin:0px 15px 15px 15px;
+
+}
+
+p{
+   margin-top:10px;
+   margin-right:20px;
+   margin-left:20px;
+}
+    
+
+
+
+
+    /*Styling contact page*/
+
+
+[type=text], select, text area{
+    width: 35%; 
+    padding: 6px; 
+    border: 1px solid rgb(226, 226, 213);
+    border-radius: 8px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+   resize: none;
+   position: auto;
+   left:200px;
+}
+
+
+
+
+/* Need to figure out how to style the text boxes*/
+
+input[type=submit] {
+    background-color:rgb(51, 50, 50);
+    color: beige;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family:Mina, sans-serif;
+    font-weight:bolder;
+    letter-spacing: 4px;
+    margin-top:30px;
+
+}
+
+input[type=submit]:hover {
+    background-color:rgb(92, 92, 92);
+}
+
+#subject{
+         max-height:200px;
+         overflow-wrap: normal;
+         margin-left:45px;
+         border-radius: 2%;
+         border:ridge beige 2px;
+         box-shadow: beige 2px 2px 2px 2px ;
+         
+        
+     }
+
+#lname{
+    margin-left:20px;
+}
+
+#fname{
+    margin-left:20px;
+}
+
+.container{
+    margin-left:20px;
+    margin-top:50px;
+}
+
+     /* the code below, not sure whats wrong items in flex box dont align properly when page loads 50% of the time, weird, turns out its the browser.  FIrefox= all okay, chrome= weird alignment issue.*/
+
+
+
+   
+    
+  
+
+    
+.social img{
+    border:1px solid beige;
+    border-radius:100%;
+    height:50px;
+    margin-top:50px;
+    float: left;
+    margin-left:20px;
+    margin-right:20px;
+}
+/* above code changes size of social icon images, adds a border, and adds space between them and the float lines them up next to eachother*/
+
+.social{
+    margin-left:300px;
+    margin-left:300px;
+}
+
+/*the code above changes the margin for the entire class of icons so they are
+spaced closer into the middle of the page.*/
+
+ .social img:hover{
+    opacity: .5;
+        
+ }
+ /* changes the opacity of the icons when they're hovered over*/
+
+
+
+
+/*styling portfolio page*/
+
+.maingallery{
+    margin-left:55px;
+}
+
+div.descrip{
+    background-color:black;
+    font-size: 8pt;
+    text-align: center;
+  
+}
+
+div.gallery {
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    
+}
+
+div.gallery:hover {
+    border: 2px solid beige;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left:auto;
+    
+    
+}
+
