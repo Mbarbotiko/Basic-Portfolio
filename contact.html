@@ -14,34 +14,29 @@
 </head>
 
 <body>
-        <nav>
-        
-                <h1 id="myname">Margarita Barbotiko</h1>
-                <ul id="mainlist">
-                
-                  
-        
-                    <li><a href="index.html">About</a>| </li>
-                    <li><a href="portfolio.html">Portfolio</a>| </li>
-                    <li><a href="contact.html">Contact</a>| </li>
-        
+        <header id="masterheader">
+                <div id="header-container">
+                    <a href="index.html" id="myname">Margarita Barbotiko</a>
+                     <nav>
                     
+                         <a href="index.html">About</a>
+                         <a href="portfolio.html">Portfolio</a>
+                         <a href="contact.html">Contact</a>
+                        
+                        <!-- was mainlist -->
+                    </nav>
+                 </div>
+             </header>
+                 
         
-        
-                </ul>
-        
-        
+    <div id="index-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
             
-        
-        </nav>
 
- <div id="bgcolor">
-
-    <h2>Contact</h2>
-            
-
-     <div class="container">
-             <form action="action_page.php">
+            <form id="contact-form">
+                
+                <form action="action_page.php">
                  <label for="fname">First Name:</label>
                  <input type="text" id="fname" name="firstname">
                  
@@ -58,43 +53,37 @@
         
 
              </form>
+        
 
-    </div>   
 
-         <div class="social">
-
-             <div id="facebook">
-                <a href="https://facebook.com/margarita.barbotiko" target="_blank"><img src="assets/images/iconfb.png"alt="facebook icon"></a>
-            </div>
-
-            <div id="github">
-                <a href="https://github.com/Mbarbotiko/" target="_blank"><img src="assets/images/icongithub.png"alt="git hub icon"></a>
-            </div>
-
-            <div id="linkedin">
-            <a href="https://www.linkedin.com/in/margarita-barbotiko-b5814050/" target="_blank"><img src="assets/images/iconlinked.png"alt="linked in icon"></a>
-            </div>
-
-            <div class="tttwitter">
-                <div id="twitter">
-                 <a href="https://twitter.com/mbarbotiko1" target="_blank"><img src="assets/images/icontwitter.png"alt="twittericon"></a>
-                <!--<span class="twittertext">Twitter</span>-->
-                </div>
-            </div>
-
-            <!-- messing around with tool tips I'll add later running out of time!-->
 
          </div>
 
+         <div class="social">
 
-</div>
+                <h2 id="connect">Connect With Me</h2>
 
-    <footer>Copyright ©</footer>
-
-
-
+                <a href="https://github.com/Mbarbotiko/" target="_blank"><img src="assets/images/icongithub.png"alt="git hub icon"></a>
 
 
+                <a href="https://www.linkedin.com/in/margarita-barbotiko-b5814050/" target="_blank"><img src="assets/images/iconlinked.png"alt="linked in icon"></a>
+
+
+                <a href="https://twitter.com/mbarbotiko1" target="_blank"><img src="assets/images/icontwitter.png"alt="twittericon"></a>
+
+           
+         </div>
+
+
+    </div>
+
+
+<footer>
+        <div id="footercontainer">
+        Copyright ©
+        </div>
+    </footer>
+    
 
 
 

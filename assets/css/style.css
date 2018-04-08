@@ -2,75 +2,118 @@
 
 body{
     background-image: url("../images/concrete-texture.png");
-    color: beige;
+    color:beige;
     font-family:Mina, sans-serif;
-    margin-left: auto;
-    margin-right:auto;
-    margin-bottom:200px;
-    margin-top:200px;
-    width: 960px;
-    position:relative;
-    
+    margin:0 auto;
+    margin-bottom:100px;
+   
 
 
 }
 
+#masterheader{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    overflow: auto;
+    color:beige;
+    background:rgb(66, 66, 66);
+    border-bottom: 2px solid beige;
+    top:0px;
+    
+}
 
-#bgcolor{
+#index-container{
     background-color:rgb(177, 202, 168);
     padding-bottom: 200px;
+    max-width:960px;
+    margin:0 auto;
+    margin-top:200px;
+    margin-bottom:100px;
+    box-shadow: 10px;
+  
 }
 
-#bgcolorport{
+#portfolio-container{
     background-color:rgb(177, 202, 168);
-    padding-bottom: 500px;
+    max-width:960px;
+    margin:0 auto;
+    margin-top:200px;
+    margin-bottom:100px;
 }
+
 
 #myname{
-    font-size: 32pt;
-    text-shadow: 5px 5px 10px rgb(43, 42, 42);
-    position:relative;
-    left:300px;
-    top:center;
+    float: left;
     width:400px;
+    height:90px;
+    font-size: 32pt;
+    text-shadow: 5px 5px 10px grey;
+    background:rgb(66, 66, 66);
+    text-decoration: none;
+    color:beige;
+    
 
 }
 
 
-h2{
+h1{
     border-bottom:2px dotted white;
     text-shadow: grey 2px 2px 2px;
     padding:15px;
 
 }
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+
+  #header-container{
+    width: 100%;
+    max-width: 960px;
+    margin:0 auto;
+    padding-top:50px;
+
+
+  }
+
+
 nav{
-    height:125px;
-    margin:auto;
-    background-color:rgb(66, 66, 66);
-    position:fixed;
-    top:0px;
-    left:0px;
-    width:100%;
-    z-index:1;
-    
-}
-
-
-li {
-    padding:15px;
     float:right;
-    position:relative;
-    top:-75px;
-    right:300px;
+    margin-top:25px;
 }
 
-li :hover:not(.active) {
+nav a{
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color:beige;
+  text-decoration: none;
+  border-left: 1px solid beige;
+}
+
+nav a:first-child {
+    border-left: 0 none;
+  }
+
+
+
+nav a:hover{
     color:black;
-}
+ 
 
+}
 .active {
-    color:black;
+    color:beige;
 }
+
 
 
 
@@ -79,7 +122,7 @@ li :hover:not(.active) {
     background-color:beige;
     margin-top: 50px;
     flex-wrap:wrap;
-    color:rgb(58, 57, 57);
+    color:rgb(66, 66, 66)
 }
 
 .aboutcontainer{
@@ -118,18 +161,23 @@ li :hover:not(.active) {
 }
 
 
-
-footer{
+#footercontainer{
     background:rgb(66, 66, 66);
     height: 40px;
     text-align: center;
-    width:100%;
-    position:fixed;
-    left:0px;
-    bottom:0px;
     padding-top: 10px;
+    margin:0 auto;
+    clear: both;
+    color:beige;
+    width: 100%;  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;    
     
 }
+
 
 
 
@@ -152,13 +200,15 @@ footer{
 
 
 #me{
-    height:25%;
-    width:25%;
-    z-index:1;
+    float: left;
+    width: 200px;
+    height:auto;
     border:1px dotted rgb(63, 63, 63);
     box-shadow:5px 5px 5px rgb(12, 12, 12);
     float: left;
-    margin:0px 35px 15px 15px;
+    margin-top: 10px;
+    margin-right:25px;
+    margin-left:25px;
 
 }
 
@@ -177,6 +227,10 @@ footer{
 
     /*Styling contact page*/
 
+
+#contact-form{
+    margin-left:20px;
+}
 
 [type=text], select, text area{
     width: 35%; 
@@ -235,58 +289,39 @@ input[type=submit]:hover {
 .container{
     margin-left:20px;
     margin-top:50px;
+
 }
 
-/* commenting this out will work on it later
-.tttwitter {
-    position: relative;
-    display: inline-block;
+
     
-}
-
-.tttwitter .twittertext {
-    visibility: hidden;
-    width: 120px;
-    background-color: grey;
-    color: #fff;
+#connect{
     text-align: center;
-    border-radius: 6px;
-    padding: 0px 0;
-
-
-    position: absolute;
-    z-index: 1;
+    border-bottom: 2px black dotted;
+    padding-bottom:10px;
 }
-
-.tttwitter:hover .twittertext {
-    visibility: visible;
-}
-
- */
-   
-    
-  
 
     
 .social img{
     border:1px solid beige;
     border-radius:100%;
-    height:50px;
-    margin-top:50px;
-    float: left;
-    margin-left:20px;
-    margin-right:20px;
-    
+    height:40px;
+    margin:10px;
+ 
 }
-/* above code changes size of social icon images, adds a border, and adds space between them and the float lines them up next to eachother*/
+
+
+
+
 
 .social{
-    margin-left:300px;
-    margin-left:300px;
+    border:black dotted 1px;
+    max-width:960px;
+    margin:0 auto;
+    color:grey;
+
 }
 
-/*the code above changes the margin for the entire class of icons so they are
-spaced closer into the middle of the page.*/
+
 
  .social img:hover{
     opacity: .8;
@@ -309,7 +344,7 @@ div.descrip{
     text-align: center;
     margin-top:-8px;
 
-    /* having a hard time getting the background color of the description to take up the whole box, there is some green backgroud showing , using the height/ width isnt working to stretch it out: used negative margin to move them up  */
+
   
 }
 
@@ -354,4 +389,8 @@ margin-left:12px;
     padding:10px;
     margin-left:12px;
 
+}
+
+a{
+    text-decoration: none;
 }
